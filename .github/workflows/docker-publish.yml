@@ -22,7 +22,7 @@ jobs:
         echo $DOCKER_USER $DOCKER_PASSWORD
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag lekhnath12/lekh:latest
+      run: docker build . --file Dockerfile --tag lekhnath12/demo:latest
       
     - name: Docker Push
-      run: docker push lekhnath12/lekh:latest
+      run: docker push lekhnath12/demo:latest
