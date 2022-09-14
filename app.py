@@ -5,8 +5,8 @@ from flask import Flask, render_template
 from jinja2 import Environment, FileSystemLoader
 
 app = Flask(__name__)
-template_dir = "./"
-ENV = Environment(loader=FileSystemLoader(template_dir))
+TEMPLATE_DIR = "./"
+ENV = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 template = ENV.get_template("index.html")
 @app.route("/")
 def test():
