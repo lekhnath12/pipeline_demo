@@ -11,7 +11,7 @@ template = ENV.get_template("index.html")
 @app.route("/")
 def test():
    """
-   Test
+   test
    """
    return render_template(template)
 
