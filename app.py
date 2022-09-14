@@ -10,10 +10,10 @@ ENV = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 template = ENV.get_template("index.html")
 @app.route("/")
 def test():
-   """
-   test
-   """
-   return render_template(template)
+    """
+    test
+    """
+    return render_template(template)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=7777, debug=True)
