@@ -10,9 +10,7 @@ ENV = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 template = ENV.get_template("index.html")
 @app.route("/")
 def test():
-    """
-    Test
-    """
+   
     return render_template(template)
 
 if __name__ == "__main__":
